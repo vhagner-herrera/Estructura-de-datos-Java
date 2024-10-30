@@ -19,13 +19,13 @@ public class Persona implements Comparable<Persona>{
         return edad;
     }
 
-    // Método compareTo para ordenar por nombre (ascendente A-Z por defecto)
+    // Metodo compareTo para ordenar por nombre (ascendente A-Z por defecto)
     @Override
     public int compareTo(Persona otraPersona) {
         return this.nombre.compareTo(otraPersona.getNombre());
     }
 
-    // Método toString para imprimir la información de la persona
+    // Metodo toString para imprimir la información de la persona
     @Override
     public String toString() {
         return "Nombre: " + nombre + ", Edad: " + edad;
