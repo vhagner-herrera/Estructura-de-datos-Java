@@ -1,6 +1,12 @@
 package PRINCIPAL;
 
 import burbuja.burbuja;
+import busqueda_bi.busqueda_bi;
+import busqueda_sec.busqueda_sec;
+import insersion.insersion;
+import quicksort.quicksort;
+import seleccion.seleccion;
+import shell.shell;
 
 import java.util.Scanner;
 
@@ -9,7 +15,14 @@ public class principal {
 
 
         Scanner sc = new Scanner(System.in);
-        burbuja ordenamiento_burbuja = new burbuja();
+        burbuja ordenamiento_burbuja= new burbuja();
+        seleccion selec = new seleccion();
+        insersion inser = new insersion();
+        shell she= new shell();
+        quicksort quic = new quicksort();
+        busqueda_sec secu= new busqueda_sec();
+        busqueda_bi bi = new busqueda_bi();
+        //pro_funcional funcional= new pro_funcional();
 
         System.out.println("===============================================");
         System.out.println("\t \t \t\t Bienvenido");
@@ -47,14 +60,14 @@ public class principal {
                 System.out.println("========================================");
                 System.out.println("Bienvenido al metodo seleccion: ");
                 System.out.println("========================================");
-//                selec.ordenamientoseleccion();
+                selec.ordenamientoseleccion();
                 break;
 
             case 3:
                 System.out.println("========================================");
                 System.out.println("Bienvenido al metodo insercion: ");
                 System.out.println("========================================");
-//                inser.ordenamientoseleccion();
+                inser.ordenamientoinsercion();
 
                 break;
 
@@ -62,7 +75,7 @@ public class principal {
                 System.out.println("========================================");
                 System.out.println("Bienvenido al metodo shell: ");
                 System.out.println("========================================");
-//                she.ordenamientoshell();
+                she.ordenamientoshell();
 
                 break;
 
@@ -70,7 +83,7 @@ public class principal {
                 System.out.println("========================================");
                 System.out.println("Bienvenido al metodo quicksort: ");
                 System.out.println("========================================");
-//                quic.ordenamientoquicksort();
+                quic.ordenamientoquicksort();
 
                 break;
 
@@ -78,7 +91,7 @@ public class principal {
                 System.out.println("========================================");
                 System.out.println("Bienvenido al metodo Búsqueda Secuencial: ");
                 System.out.println("========================================");
-//                secu.busueda_secuencial();
+                secu.busueda_secuencial();
 
                 break;
 
@@ -86,7 +99,6 @@ public class principal {
                 System.out.println("========================================");
                 System.out.println("Bienvenido al metodo Búsqueda binaria: ");
                 System.out.println("========================================");
-
                 break;
 
             case 8:

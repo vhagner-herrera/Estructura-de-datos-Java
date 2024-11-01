@@ -1,12 +1,11 @@
-package insersion;
+package seleccion;
 
 import java.util.Scanner;
 
-public class insersion {
-    orden_insercion inser = new orden_insercion();
-
+public class seleccion {
+    orden_seleccion selec= new orden_seleccion();
     Scanner sc = new Scanner(System.in);
-    public void ordenamientoinsercion(){
+    public void ordenamientoseleccion(){
         System.out.println("que desea ordenar:\n"+
                 "1: Numeros:\n"+
                 "2: cadenas:\n"+
@@ -17,19 +16,19 @@ public class insersion {
             case 1:
                 System.out.println("numeros");
                 System.out.println("========================================");
-                inser.numeros();
+                selec.numeros();
                 break;
 
             case 2:
                 System.out.println("Cadenas: ");
                 System.out.println("========================================");
-                inser.cadenas();
+                selec.cadenas();
 
                 break;
             case 3:
                 System.out.println("objetos: ");
                 System.out.println("========================================");
-                inser.objetos();
+                selec.objetos();
 
                 break;
         }
