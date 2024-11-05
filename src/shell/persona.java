@@ -1,6 +1,6 @@
 package shell;
 
-public class persona implements Comparable<seleccion.objeto.persona>{
+public class persona implements Comparable<seleccion.persona>{
     private String nombre;
     private int edad;
 
@@ -28,7 +28,7 @@ public class persona implements Comparable<seleccion.objeto.persona>{
 
 
     @Override
-    public int compareTo(seleccion.objeto.persona otraPersona) {
+    public int compareTo(seleccion.persona otraPersona) {
         return this.nombre.compareTo(otraPersona.getNombre());
     }
     @Override

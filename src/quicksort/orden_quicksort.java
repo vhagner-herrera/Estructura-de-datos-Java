@@ -1,6 +1,7 @@
 package quicksort;
 
 import java.util.Comparator;
+import java.util.Scanner;
 
 public class orden_quicksort {
     metodos metod = new metodos();

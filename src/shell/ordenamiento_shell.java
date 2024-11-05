@@ -1,5 +1,6 @@
 package shell;
 
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class ordenamiento_shell {
